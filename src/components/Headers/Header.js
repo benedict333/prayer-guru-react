@@ -24,7 +24,7 @@ const useStyles = makeStyles(componentStyles);
 const Header = () => {
   const classes = useStyles();
   const theme = useTheme();
-  const text =" നവവത്സരാശംസകൾ! ഈ വെബ്സൈറ്റിന്റ്റെ പ്രവർത്തനം പുരോഗമിച്ചുകൊണ്ടിരിക്കുന്നു! ദയവായി കാത്തിരിക്കുക!"
+  const text =" നവവത്സരാശംസകൾ! ഈ വെബ്സൈറ്റിൻ്റെ  പ്രവർത്തനം പുരോഗമിച്ചുകൊണ്ടിരിക്കുന്നു! ദയവായി കാത്തിരിക്കുക!  "
   return (
     <>
       <div className={classes.header}>
@@ -34,36 +34,15 @@ const Header = () => {
           classes={{ root: classes.containerRoot }}
         >
           <div>
+          <MarqueeText text={text}/>
             <Grid container>
-              <Grid item xl={12} lg={12} xs={12}>
+           
+              <Grid item xl={12} lg={12} xs={12}>                
                 <CardStats
                 
                   subtitle="ബേബിച്ചേട്ടൻ, പ്രാർത്ഥനയുടെ ആചാര്യൻ "
-                  title={<MarqueeText text={text}/>}
-                  // icon={InsertChartOutlined}
-                  // color="bgError"
-                  // footer={
-                  //   <>
-                  //     {/* <Box
-                  //       component="span"
-                  //       fontSize=".875rem"
-                  //       color={theme.palette.success.main}
-                  //       marginRight=".5rem"
-                  //       display="flex"
-                  //       alignItems="center"
-                  //     >
-                  //       <Box
-                  //         component={ArrowUpward}
-                  //         width="1.5rem!important"
-                  //         height="1.5rem!important"
-                  //       />{" "}
-                  //       3.48%
-                  //     </Box> */}
-                  //     {/* <Box component="span" whiteSpace="nowrap">
-                  //       Since last month
-                  //     </Box> */}
-                  //   </>
-                  // }
+                  title=" നവവത്സരാശംസകൾ! ഈ വെബ്സൈറ്റിൻ്റെ  പ്രവർത്തനം പുരോഗമിച്ചുകൊണ്ടിരിക്കുന്നു! ദയവായി കാത്തിരിക്കുക!  "
+
                 />                
               </Grid>
 
