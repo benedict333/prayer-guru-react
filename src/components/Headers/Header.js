@@ -17,7 +17,8 @@ import Grid from "@material-ui/core/Grid";
 import CardStats from "components/Cards/CardStats.js";
 
 import componentStyles from "assets/theme/components/header.js";
-import MarqueeText from 'react-marquee-text-component';
+import MarqueeText from "react-marquee-text-component";
+import AudioComponent from "component/AudioComponent";
 
 const useStyles = makeStyles(componentStyles);
 
@@ -25,6 +26,7 @@ const Header = () => {
   const classes = useStyles();
   const theme = useTheme();
   const text =" നവവത്സരാശംസകൾ! ഈ വെബ്സൈറ്റിൻ്റെ  പ്രവർത്തനം പുരോഗമിച്ചുകൊണ്ടിരിക്കുന്നു! ദയവായി കാത്തിരിക്കുക!  "
+  
   return (
     <>
       <div className={classes.header}>
@@ -34,13 +36,17 @@ const Header = () => {
           classes={{ root: classes.containerRoot }}
         >
           <div>
+            <AudioComponent
+            />
+          </div>
+          <div>
           <MarqueeText text={text}/>
             <Grid container>
            
               <Grid item xl={12} lg={12} xs={12}>                
                 <CardStats
                 
-                  subtitle="ബേബിച്ചേട്ടൻ, പ്രാർത്ഥനയുടെ ആചാര്യൻ "
+                  subtitle="ബേബിച്ചേട്ടൻ, പ്രാർത്ഥനയുടെ ആചാര്യൻ! "
                   title=" നവവത്സരാശംസകൾ! ഈ വെബ്സൈറ്റിൻ്റെ  പ്രവർത്തനം പുരോഗമിച്ചുകൊണ്ടിരിക്കുന്നു! ദയവായി കാത്തിരിക്കുക!  "
 
                 />                

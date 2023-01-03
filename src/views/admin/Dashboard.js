@@ -37,6 +37,7 @@ import {
 } from "variables/charts.js";
 
 import componentStyles from "assets/theme/views/admin/dashboard.js";
+import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
 
 const useStyles = makeStyles(componentStyles);
 
@@ -672,6 +673,11 @@ function Dashboard() {
             </Card>
           </Grid>
         </Grid>
+        <div className="App">
+            <TawkMessengerReact
+                propertyId="5d313d62bfcb827ab0cc9545"
+                widgetId="1glqnm69u"/>
+        </div>
       </Container>      
     </>
   );
