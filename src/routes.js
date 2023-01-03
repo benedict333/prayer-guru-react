@@ -4,9 +4,9 @@ import Dashboard from "views/admin/Dashboard.js";
 // import Login from "views/auth/Login.js";
 // import Maps from "views/admin/Maps.js";
 // import Profile from "views/admin/Profile.js";
-// import Register from "views/auth/Register.js";
+import Register from "views/auth/Register.js";
 // import Tables from "views/admin/Tables.js";
-// // @material-ui/icons components
+// @material-ui/icons components
 // import AccountCircle from "@material-ui/icons/AccountCircle";
 // import Dns from "@material-ui/icons/Dns";
 // import FlashOn from "@material-ui/icons/FlashOn";
@@ -73,14 +73,14 @@ var routes = [
   //   component: Login,
   //   layout: "/auth",
   // },
-  // {
-  //   path: "/register",
-  //   name: "Register",
-  //   icon: AccountCircle,
-  //   iconColor: "ErrorLight",
-  //   component: Register,
-  //   layout: "/auth",
-  // },
+  {
+    // path: "/register",
+    // name: "Register",
+    // icon: AccountCircle,
+    // iconColor: "ErrorLight",
+    component: Register,
+    // layout: "/auth",
+  },
   // {
   //   divider: true,
   // },
@@ -93,17 +93,17 @@ var routes = [
   //   name: "Getting started",
   //   icon: FlashOn,
   // },
-  // {
-  //   href:
-  //     "https://www.creative-tim.com/learning-lab/material-ui/colors/argon-dashboard?ref=admui-admin-sidebar",
-  //   name: "Foundation",
-  //   icon: Palette,
-  // },
-  // {
-  //   href:
-  //     "https://www.creative-tim.com/learning-lab/material-ui/alerts/argon-dashboard?ref=admui-admin-sidebar",
-  //   name: "Components",
-  //   icon: Dns,
-  // },
+  {
+    // href:
+    //   "https://www.creative-tim.com/learning-lab/material-ui/colors/argon-dashboard?ref=admui-admin-sidebar",
+    // name: "Foundation",
+    // icon: Palette,
+  },
+  {
+    // href:
+    //   "https://www.creative-tim.com/learning-lab/material-ui/alerts/argon-dashboard?ref=admui-admin-sidebar",
+    // name: "Components",
+    // icon: Dns,
+  },
 ];
 export default routes;
