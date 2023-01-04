@@ -18,7 +18,7 @@ import CardStats from "components/Cards/CardStats.js";
 
 import componentStyles from "assets/theme/components/header.js";
 import MarqueeText from "react-marquee-text-component";
-import AudioComponent from "component/AudioComponent";
+import song from "assets/audio/sneharoopanesu.mp3";
 
 const useStyles = makeStyles(componentStyles);
 
@@ -36,8 +36,9 @@ const Header = () => {
           classes={{ root: classes.containerRoot }}
         >
           <div>
-            <AudioComponent
-            />
+           <button><h4>സ്നേഹരൂപനേശു നിന്നെ വിളിക്കുന്നു.... എന്ന ഗാനം ശ്രവിക്കുവാൻ താഴെ ക്ലിക്ക് ചെയ്യുക!</h4> </button> 
+          <p></p>
+          <audio  controlsList="nodownload" src={song} controls />
           </div>
           <div>
           <MarqueeText text={text}/>
