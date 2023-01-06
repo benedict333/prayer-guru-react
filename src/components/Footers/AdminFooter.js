@@ -33,17 +33,6 @@ const Footer = () => {
             alignItems="center"
             className={classes.flexDirectionColumn}
           >
-            <ListItem
-              component="a"
-             // href="https://www.creative-tim.com?ref=adr-admin-footer"
-              rel="noopener noreferrer"
-              target="_blank"
-              classes={{
-                root: classes.listItemRoot,
-              }}
-            >
-             
-            </ListItem>
 
             <ListItem
               component="a"
